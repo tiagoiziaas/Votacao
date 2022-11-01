@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+   <meta charset="UTF-8">
+   <link href="css/style.css" rel="stylesheet" >
+   <title>Nacionalidade</title>
+</head>
+<body>
+   <div class="box">
+      <div class="cont">
+         <h1> Vamos ver se você é apto para votar !!</h1> 
+         <p> A realização das Eleições 2012 para o cargo de prefeito e de verador nos municípios brasileiros se aproxima, e, com ela, aumenta a expectativa de <strong> mudanças no cenário  político do Brasil. </strong></br> Muitos eleitores, entretanto, não acreditam ser possível mudar a história do país e insistem na ideia de que a corrupção é inerente à política brasileira. </br> Todavia, as eleições municipais deste ano determinarão o futuro de cada cidade para os próximos quatro anos, motivo pelo qual é fundamental que cada eleitor faça a sua opção de modo <strong> consciente </strong> e com <strong>seriedade. </strong></p>
+      </div>
+      <div class="esquerdo">
+         <h1> Digite a sua idade a baixo!!</h1>
+         <p> A sua idade será calculada, segundo nossos <strong> scripts!!</strong> </p>
+         <div class="cal">
+            <input type="number" name="idade" id="idade">
+            <input type="button" value="calcular" id="button" onclick="calcular()">
+         </div>
+         <div id="text">
+
+         </div>
+      </div>
+   </div>
+   <script> 
+      function calcular() {
+         var idade = document.querySelector('input#idade')
+         var text = document.querySelector('div#text')
+         
+         if (idade.value >= 18 && idade.value < 62 ){
+            text.innerHTML = `Com <strong> ${idade.value}</strong> o eleitor é <strong> obrigatorio </strong>a votar!!`
+         } else if (idade.value >= 16 && idade.value < 18 || idade.value >= 62 ) { 
+               text.innerHTML =`Com <strong>${idade.value} </strong>O eleitor é  <strong> opcional </strong> a votar!!`
+         } else if (idade.value <= 15 ){
+            text.innerHTML =`Com <strong> ${idade.value}  não é eleitor!!</strong>`
+         }  else {
+            text.innerHTML = `Com <strong> ${idade.value} não é eleitor</strong>`
+         }
+      }
+   </script>
+</body>
+</html>

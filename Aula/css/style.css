@@ -1,0 +1,77 @@
+html, body{
+    padding: 0;
+    margin: 0;
+    background-color: rgba(0, 0, 0, 0.938);
+    background-image: url(../img/jackson-sophat-_t-l5FFH8VA-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.box{
+    display: inline-flex;
+    margin: 50px 10%;   
+    border-radius:  10px;
+    background-color: rgba(255, 255, 255, 0.39);
+    width: 80vw;
+    height: 70vh;
+}
+.cont{
+    width: 40vw;
+    height: 70vh;
+}
+.esquerdo{
+    width: 40vw;
+    height: 70vh;
+}
+h1{
+    margin-left: 10px;
+    color: #800628;
+}
+.const > h1, p{
+    width: 500px;
+    text-align: center;
+    color: hsl(343, 67%, 47%);
+    margin-left: 10px;
+}
+p{
+    margin-top:  80px;
+}
+ #idade{
+    width: 180px;
+    height: 20px;
+    border-radius: 50px;
+    border-color: hsla(343, 97%, 23%, 0.356);
+    background-color: hsl(343, 67%, 47%);
+    cursor: pointer;
+}
+ #idade:hover{
+    background-color: #e258a4;
+    color: white;
+}
+#button{
+    background-color: #e258a4;
+    font-size:11px;
+    height: 50px;
+    width: 52px;
+    border-radius: 50%;
+    border: none;
+    color: #800628;
+    
+
+}
+#button:hover{
+    color: #800628;
+    border: 2px solid #800628;
+   background-color: white
+}
+.esquerdo > h1 {
+    margin-left:50px ;
+    display: inline-flex;
+}
+.cal{
+    display: inline-block;
+     margin:2px  100px;
+}
+#text {
+    margin: 0px 92px;
+    color: #b80768;
+}
